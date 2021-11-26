@@ -9,11 +9,11 @@ The datastructure of a User class is like:
 }
 ```
 ## To test
-- GET method
+- GET method （check all the users)
 ```bash=
 $ curl localhost:8080/api/users
 ```
-- POST method
+- POST method (create a new user)
 ```bash=
 $ curl -X POST -H "Content-Type: application/json" -d '{"name" : "Jack", "age" : 1}' localhost:8080/api/users
 ```
