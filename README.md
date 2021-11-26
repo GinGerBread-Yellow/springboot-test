@@ -22,6 +22,7 @@ $ curl -X POST -H "Content-Type: application/json" -d '{"name" : "Jack", "age" :
 
 ```bash=
 # run in local side
+# ** in order to connect to database, you need to change url: ...(mysql)... to url: ...(127.0.0.1).... in application-dev.yml file **
 $ ./gradlew bootrun
 # build docker image
 $ ./gradlew bootbuildimage
