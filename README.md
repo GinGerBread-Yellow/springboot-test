@@ -29,3 +29,21 @@ $ ./gradlew bootbuildimage
 # deploy and run
 $ docker-compose up
 ```
+
+
+https://github.com/cloud-technology/initialize-project
+
+https://youtube.com/playlist?list=PLPeEs8-8l_L8VvpXKLOscgyDOaXKaPnVf
+
+https://cloudonair.withgoogle.com/events/gke-event
+
+https://github.com/samzhu/2021-jcconf-tw-ddd-lab-springboot-axon/blob/main/cart/reference/docker/docker-compose.yml
+
+https://docs.docker.com/compose/install/
+
+https://github.com/samzhu/2021-jcconf-tw-ddd-lab-springboot-axon/blob/main/cart/src/main/java/com/example/demo/cart/domain/projecttions/CartEntity.java
+
+https://github.com/samzhu/2021-jcconf-tw-ddd-lab-springboot-axon/blob/main/cart/config/application-dev.yml
+
+
+https://www.thoughtworks.com/radar/languages-and-frameworks?blipid=201911026
