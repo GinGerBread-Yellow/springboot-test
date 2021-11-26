@@ -1,6 +1,7 @@
 ## introduction 
-A website and database that can get users and add new users
-for a user
+A website and database that can get users and add new users.
+
+The datastructure of a User class is like:
 ```
 {
     "name" : "sam",
@@ -20,9 +21,9 @@ $ curl -X POST -H "Content-Type: application/json" -d '{"name" : "Jack", "age" :
 ## How to run
 
 ```bash=
-# run in local
+# run in local side
 $ ./gradlew bootrun
-# build image
+# build docker image
 $ ./gradlew bootbuildimage
 # deploy and run
 $ docker-compose up
