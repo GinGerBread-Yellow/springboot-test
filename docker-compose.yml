@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  
+  mysql: # https://hub.docker.com/_/mysql
+    image: 'mysql:8.0.27'
+    restart: always
+    command: '--default-authentication-plugin=mysql_native_password'
+    ports:
+      - '3306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: 'pw123456'
+      MYSQL_DATABASE: 'devdb'
+      MYSQL_USER: 'user1'
+      MYSQL_PASSWORD: 'pw123456'
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+    networks:
+      - privateBridge
+
+  app:
+    image: springboot-native:0.0.1-SNAPSHOT 
+    container_name: springboot
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - privateBridge
+    environment:
+      spring.profiles.active : 'dev'
+    volumes:
+      - $PWD/config/:/workspace/config/
+    
+
+networks:
+  privateBridge:
+    driver: bridge
